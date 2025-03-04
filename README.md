@@ -30,11 +30,7 @@ conda activate genphoto
 ```
 
 ### 2. Prepare Models and Weights
-* Download Stable Diffusion V1.5 (SD1.5) from [Hugging Face](https://huggingface.co/Jiali/stable-diffusion-1.5/tree/main)
-* Download folder `unet_merged` from [Hugging Face](https://huggingface.co/pandaphd/generative_photography)/unet_merged
-or [baiduNetdisk](https://pan.baidu.com/s/1WEnw8c3KcYrW4X8-WSl-Zg?pwd=6666), then move the folder into Stable Diffusion V1.5 (SD1.5)
-* Download our pre-trained weights from [Hugging Face](https://huggingface.co/pandaphd/generative_photography)/weights or [baiduNetdisk](https://pan.baidu.com/s/1jmWYSDcKzsQKbtoxG1IdSQ?pwd=6666)
-
+* Download Stable Diffusion V1.5 (SD1.5) and  pre-trained weights from [Hugging Face](https://huggingface.co/pandaphd/generative_photography). Please note that we add the folder `unet_merged` into Stable Diffusion V1.5 (SD1.5).
 
 ### 3. Modify the File Configuration
 * Modify the configuration yaml files in `config` folders, replace all the dataset & ckpt roots with yours
