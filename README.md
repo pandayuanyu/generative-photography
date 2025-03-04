@@ -57,22 +57,17 @@ self.text_encoder = CLIPTextModel.from_pretrained("/your_path/stable-diffusion-v
 
 ## Inference
 
-* For bokeh rendering
 ```python 
+# For bokeh rendering
 python inference_bokehK.py --config configs/inference_genphoto/adv3_256_384_genphoto_relora_bokehK.yaml --base_scene "A young boy wearing an orange jacket is standing on a crosswalk, waiting to cross the street." --bokehK_list "[2.44, 8.3, 10.1, 17.2, 24.0]"
-```
-* For focal length
-```python 
+
+# For focal length
 python inference_focal_length.py --config configs/inference_genphoto/adv3_256_384_genphoto_relora_focal_length.yaml --base_scene "A cozy living room with a large, comfy sofa and a coffee table." --focal_length_list "[25.0, 35.0, 45.0, 55.0, 65.0]"
-```
 
-* For shutter speed
-```python 
+# For shutter speed
 python inference_shutter_speed.py --config configs/inference_genphoto/adv3_256_384_genphoto_relora_shutter_speed.yaml --base_scene "A modern bathroom with a mirror and soft lighting." --shutter_speed_list "[0.1, 0.3, 0.52, 0.7, 0.8]"
-```
 
-* For color temperature
-```python 
+# For color temperature 
 python inference_bokehK.py --config configs/inference_genphoto/adv3_256_384_genphoto_relora_bokehK.yaml --base_scene "A young boy wearing an orange jacket is standing on a crosswalk, waiting to cross the street." --bokehK_list "[2.44, 8.3, 10.1, 17.2, 24.0]"
 ```
 
@@ -92,8 +87,8 @@ you can resume the training from our provided weights
 
 ### 3. Training Examples
 
-* For example, for training bokeh rendering:
 ```python 
+# example for training bokeh rendering
 python -m torch.distributed.launch --nproc_per_node=1 --use_env train_bokehK.py --config configs/train_genphoto/adv3_256_384_genphoto_relora_bokehK.yaml
 ```
 
