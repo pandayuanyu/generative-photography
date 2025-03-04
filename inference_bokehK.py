@@ -91,7 +91,7 @@ class Camera_Embedding(Dataset):
         concatenated_differences = torch.cat(differences, dim=0)
 
         pad_length = 128 - concatenated_differences.size(1)
-        print('pad_length', pad_length)
+
         if pad_length > 0:
             concatenated_differences_padded = F.pad(concatenated_differences, (0, 0, 0, pad_length))
 

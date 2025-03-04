@@ -54,7 +54,6 @@ def create_focal_length_embedding(focal_length_values, target_height, target_wid
     for i in range(f):
         # Crop dimensions calculated using rounded float values
         crop_h = torch.round(crop_ratio_ys[i] * target_height).int().item()  # Rounded cropped height for the current frame
-       # print('crop_h', crop_h)
         crop_w = torch.round(crop_ratio_xs[i] * target_width).int().item()  # Rounded cropped width for the current frame
 
         # Ensure the cropped dimensions are within valid bounds
