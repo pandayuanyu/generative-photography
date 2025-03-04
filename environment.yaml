@@ -1,0 +1,27 @@
+name: genphoto
+channels:
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - pytorch=2.1.1
+  - torchvision=0.16.1
+  - torchaudio=2.1.1
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+    - diffusers==0.24.0
+    - xformers==0.0.23
+    - imageio==2.36.0
+    - imageio[ffmpeg]
+    - opencv-python
+    - transformers
+    - gdown
+    - einops
+    - decord
+    - omegaconf
+    - safetensors
+    - gradio
+    - wandb
+    - triton
+    - termcolor
