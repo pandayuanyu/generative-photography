@@ -104,8 +104,8 @@ bokeh_examples = [
 ]
 
 focal_examples = [
-    ["A small office cubicle with a desk.", "[25.1, 36.1, 47.1, 58.1, 69.1]"],
-    ["A large white couch in a living room.", "[55.0, 46.0, 37.0, 28.0, 25.0]"]
+    ["A small office cubicle with a desk.", "[26.1, 35.0, 47.1, 58.1, 69.1]"],
+    ["A large white couch in a living room.", "[54.0, 46.0, 37.0, 28.0, 25.0]"]
 ]
 
 shutter_examples = [
@@ -122,6 +122,15 @@ color_examples = [
 with gr.Blocks(title="Generative Photography") as demo:
     gr.Markdown("# **Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis** ")
 
+    gr.Markdown(
+        "### 📄 [Paper](https://arxiv.org/abs/2412.02168)  \n"
+        "### 🔗 [GitHub](https://github.com/pandayuanyu/generative-photography)  \n"
+        "#### ⭐ If you like our work, please consider starring our GitHub repository!"
+    )
+
+
+
+
     with gr.Tabs():
         with gr.Tab("BokehK Effect"):
             gr.Markdown("### Generate Frames with Bokeh Blur Effect")
@@ -129,9 +138,9 @@ with gr.Blocks(title="Generative Photography") as demo:
                 with gr.Column():
                     scene_input_bokeh = gr.Textbox(label="Scene Description", placeholder="Describe the scene you want to generate...")
                     bokeh_input = gr.Textbox(label="Bokeh Blur Values", placeholder="Enter 5 comma-separated values from 1-30, e.g., [2.44, 8.3, 10.1, 17.2, 24.0]")
-                    submit_bokeh = gr.Button("Generate Video")
+                    submit_bokeh = gr.Button("Generate Frames")
                 with gr.Column():
-                    video_output_bokeh = gr.Video(label="Generated Video")
+                    video_output_bokeh = gr.Video(label="Generated Frames")
             gr.Examples(bokeh_examples, [scene_input_bokeh, bokeh_input], [video_output_bokeh], generate_bokeh_video)
             submit_bokeh.click(generate_bokeh_video, [scene_input_bokeh, bokeh_input], [video_output_bokeh])
 
@@ -141,9 +150,9 @@ with gr.Blocks(title="Generative Photography") as demo:
                 with gr.Column():
                     scene_input_focal = gr.Textbox(label="Scene Description", placeholder="Describe the scene you want to generate...")
                     focal_input = gr.Textbox(label="Focal Length Values", placeholder="Enter 5 comma-separated values from 24-70, e.g., [25.1, 30.2, 33.3, 40.8, 54.0]")
-                    submit_focal = gr.Button("Generate Video")
+                    submit_focal = gr.Button("Generate Frames")
                 with gr.Column():
-                    video_output_focal = gr.Video(label="Generated Video")
+                    video_output_focal = gr.Video(label="Generated Frames")
             gr.Examples(focal_examples, [scene_input_focal, focal_input], [video_output_focal], generate_focal_video)
             submit_focal.click(generate_focal_video, [scene_input_focal, focal_input], [video_output_focal])
 
@@ -153,9 +162,9 @@ with gr.Blocks(title="Generative Photography") as demo:
                 with gr.Column():
                     scene_input_shutter = gr.Textbox(label="Scene Description", placeholder="Describe the scene you want to generate...")
                     shutter_input = gr.Textbox(label="Shutter Speed Values", placeholder="Enter 5 comma-separated values from 0.1-1.0, e.g., [0.15, 0.32, 0.53, 0.62, 0.82]")
-                    submit_shutter = gr.Button("Generate Video")
+                    submit_shutter = gr.Button("Generate Frames")
                 with gr.Column():
-                    video_output_shutter = gr.Video(label="Generated Video")
+                    video_output_shutter = gr.Video(label="Generated Frames")
             gr.Examples(shutter_examples, [scene_input_shutter, shutter_input], [video_output_shutter], generate_shutter_video)
             submit_shutter.click(generate_shutter_video, [scene_input_shutter, shutter_input], [video_output_shutter])
 
@@ -165,11 +174,11 @@ with gr.Blocks(title="Generative Photography") as demo:
                 with gr.Column():
                     scene_input_color = gr.Textbox(label="Scene Description", placeholder="Describe the scene you want to generate...")
                     color_input = gr.Textbox(label="Color Temperature Values", placeholder="Enter 5 comma-separated values from 2000-10000, e.g., [3001.3, 4000.2, 4400.34, 5488.23, 8888.82]")
-                    submit_color = gr.Button("Generate Video")
+                    submit_color = gr.Button("Generate Frames")
                 with gr.Column():
-                    video_output_color = gr.Video(label="Generated Video")
+                    video_output_color = gr.Video(label="Generated Frames")
             gr.Examples(color_examples, [scene_input_color, color_input], [video_output_color], generate_color_video)
             submit_color.click(generate_color_video, [scene_input_color, color_input], [video_output_color])
 
 if __name__ == "__main__":
-    demo.launch(share=True)
+    demo.launch(share=Tr
