@@ -70,7 +70,7 @@ python inference_bokehK.py --config configs/inference_genphoto/adv3_256_384_genp
 ## Training
 ### 1. Prepare Dataset
 * Download the training and validation camera setting dataset (base images for each camera setting) from [Hugging Face](https://huggingface.co/datasets/pandaphd/camera_settings). 
-We do the physical simulation on-the-fly in `genphoto/data/dataset.py`
+We perform the physical simulation on-the-fly in `genphoto/data/dataset.py`.
 
 
 * [optional] Using [LLaVA](https://github.com/haotian-liu/LLaVA) or other vision language models to generate a caption for each base image. We already provide our extracted captions in the `annotations/xxxx.json` files
@@ -99,8 +99,7 @@ We provide the evaluation metrics code in `comp_metrics/` folder
 
 * Support Complex Camera Settings: Currently we only support single camera setting control during generation.
 It is theoretically feasible to simultaneously embed complex camera settings in a
- high-dimensional encoding form. It takes some engineer
-ing efforts on the realistic data simulation pipeline as it
+ high-dimensional encoding form. It takes some engineering efforts on the realistic data simulation pipeline as it
  requires a long and dedicated sequence of the real-world
  simulation, such as performing optical simulation (focal
  length and aperture) first, followed by CMOS simulation
