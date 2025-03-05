@@ -5,7 +5,6 @@ import gradio as gr
 import json
 import torch
 
-from huggingface_hub import snapshot_download
 
 from inference_bokehK import load_models as load_bokeh_models, run_inference as run_bokeh_inference, OmegaConf
 from inference_focal_length import load_models as load_focal_models, run_inference as run_focal_inference
@@ -13,14 +12,14 @@ from inference_shutter_speed import load_models as load_shutter_models, run_infe
 from inference_color_temperature import load_models as load_color_models, run_inference as run_color_inference
 
 
-
-
-model_path = "ckpts"
-os.makedirs(model_path, exist_ok=True)
-
-
-print("Downloading models from Hugging Face...")
-snapshot_download(repo_id="pandaphd/generative_photography", local_dir=model_path)
+## download the weights if you do not have
+# from huggingface_hub import snapshot_download
+# model_path = "ckpts"
+# os.makedirs(model_path, exist_ok=True)
+#
+#
+# print("Downloading models from Hugging Face...")
+# snapshot_download(repo_id="pandaphd/generative_photography", local_dir=model_path)
 
 
 
