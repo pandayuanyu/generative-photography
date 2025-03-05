@@ -88,11 +88,18 @@ you can resume the training from our provided weights
 python -m torch.distributed.launch --nproc_per_node=1 --use_env train_bokehK.py --config configs/train_genphoto/adv3_256_384_genphoto_relora_bokehK.yaml
 ```
 
+
+## Demo
+We provide the Gradio demo, use following script:
+
+```python
+python app.py 
+```
+You can also visit our online [Hugging Face demo](https://huggingface.co/spaces/pandaphd/generative_photography)  
+
 ## Evaluation
 
 We provide the evaluation metrics code in `comp_metrics/` folder
-
-
 
 
 ## Some Future Directions for Generative Photography
