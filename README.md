@@ -7,7 +7,7 @@ This repository is the official implementation of [Generative Photography](https
 
 ## [[Paper](https://arxiv.org/abs/2412.02168)] [[Project Page](https://generative-photography.github.io/project/)] [[Dataset](https://huggingface.co/datasets/pandaphd/camera_settings)] [[Weights](https://huggingface.co/pandaphd/generative_photography)] [[HF Demo](https://huggingface.co/spaces/pandaphd/generative_photography)]
 
-![GenPhoto Example](project_page/static/images/genphoto.gif)
+![GenPhoto Example](project_page/static/images/Genphoto.gif)
 
 
 ## 🔥 Latest News!!
