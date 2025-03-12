@@ -103,6 +103,14 @@ We provide the evaluation metrics code in `comp_metrics/` folder
 
 
 ## Some Future Directions for Generative Photography
+Generative Photography is a new research
+domain that requires much more research to be
+further refined. Below are some potential
+future research directions. We welcome 
+researchers to follow up on this work 
+from these perspectives, and we are 
+always open to collaboration.
+
 
 * Support Complex Camera Settings: Currently we only support single camera setting control during generation.
 It is theoretically feasible to simultaneously embed complex camera settings in a
@@ -131,6 +139,9 @@ with the real world, such as the lack of true optical distortions.
 * Adapt to the DiT Architecture and Larger Resolution: For better quality.
 
 
+* Adapt Generative Photography to Generative Videography
+
+
 ## Disclaimer
 This project is released for academic use. We disclaim responsibility for user-generated content. Users are solely liable for their actions. The project contributors are not legally affiliated with, nor accountable for, users' behaviors. Use the generative model responsibly, adhering to ethical and legal standards. 
 
@@ -140,7 +151,7 @@ We thank [AnimateDiff](https://github.com/guoyww/AnimateDiff) and [CameraCtrl](h
 
 
 ## BibTeX
-
+If you feel this project helpful/insightful, please cite our paper:
 ```bibtex
 @article{Yuan_2025_GenPhoto,
   title={Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis},
