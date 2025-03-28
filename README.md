@@ -11,7 +11,7 @@ This repository is the official implementation of [Generative Photography](https
 
 
 ## 🔥 Latest News!!
-* March 28, 2025: The demo is acaepted at CVPR 2025 Demo.
+* March 28, 2025: The [demo](https://huggingface.co/spaces/pandaphd/generative_photography) is accepted by CVPR 2025 Demo.
 * March 25, 2025: The CVPR camera-ready paper is now available on arXiv.
 * March 18, 2025: Focused news on [Purdue ECE](https://engineering.purdue.edu/ECE/News/2025/generative-photography-lays-new-foundations-for-imaging)
 * March 4, 2025: Release the Hugging Face Gradio online demo.
