@@ -17,7 +17,7 @@ This repository is the official implementation of [Generative Photography](https
 * [March 18, 2025]: Focused news on [Purdue ECE](https://engineering.purdue.edu/ECE/News/2025/generative-photography-lays-new-foundations-for-imaging)
 * [March 4, 2025]: Release the Hugging Face Gradio online demo.
 * [March 3, 2025]: Release offical code and pre-trained weights.
-* [Feb 26, 2025]: Paper is accepted by CVPR 2025!
+* [Feb 26, 2025]: Paper is accepted by **CVPR 2025**!
 * [Dec 20, 2024]: Release dataset.
 
 
