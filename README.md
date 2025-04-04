@@ -1,4 +1,4 @@
-# [CVPR 2025] Generative Photography 
+# [CVPR 2025 Highlight] Generative Photography 
 
 This repository is the official implementation of [Generative Photography](https://arxiv.org/abs/2412.02168).
 
@@ -11,13 +11,14 @@ This repository is the official implementation of [Generative Photography](https
 
 
 ## 🔥 Latest News!!
-* March 28, 2025: The [demo](https://huggingface.co/spaces/pandaphd/generative_photography) is accepted by CVPR 2025 Demo.
-* March 25, 2025: The CVPR camera-ready paper is now available on arXiv.
-* March 18, 2025: Focused news on [Purdue ECE](https://engineering.purdue.edu/ECE/News/2025/generative-photography-lays-new-foundations-for-imaging)
-* March 4, 2025: Release the Hugging Face Gradio online demo.
-* March 3, 2025: Release offical code and pre-trained weights.
-* Feb 26, 2025: Paper is accepted by CVPR 2025!
-* Dec 20, 2024: Release dataset.
+* [April 4, 2025]: Generative Photography has been selected as **CVPR 2025 Highlight**! 
+* [March 28, 2025]: The [demo](https://huggingface.co/spaces/pandaphd/generative_photography) is accepted by **CVPR 2025 Demo**.
+* [March 25, 2025]: The CVPR camera-ready paper is now available on arXiv.
+* [March 18, 2025]: Focused news on [Purdue ECE](https://engineering.purdue.edu/ECE/News/2025/generative-photography-lays-new-foundations-for-imaging)
+* [March 4, 2025]: Release the Hugging Face Gradio online demo.
+* [March 3, 2025]: Release offical code and pre-trained weights.
+* [Feb 26, 2025]: Paper is accepted by CVPR 2025!
+* [Dec 20, 2024]: Release dataset.
 
 
 ## Configurations
