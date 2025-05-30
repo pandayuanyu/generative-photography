@@ -66,7 +66,7 @@ python inference_focal_length.py --config configs/inference_genphoto/adv3_256_38
 python inference_shutter_speed.py --config configs/inference_genphoto/adv3_256_384_genphoto_relora_shutter_speed.yaml --base_scene "A modern bathroom with a mirror and soft lighting." --shutter_speed_list "[0.1, 0.3, 0.52, 0.7, 0.8]"
 
 # For color temperature 
-python inference_bokehK.py --config configs/inference_genphoto/adv3_256_384_genphoto_relora_bokehK.yaml --base_scene "A young boy wearing an orange jacket is standing on a crosswalk, waiting to cross the street." --bokehK_list "[2.44, 8.3, 10.1, 17.2, 24.0]"
+python inference_color_temperature.py --config configs/inference_genphoto/adv3_256_384_genphoto_relora_color_temperature.yaml --base_scene "A blue sky with mountains." --color_temperature_list "[5455.0, 5155.0, 5555.0, 6555.0, 7555.0]"
 ```
 
 ## Training
@@ -159,7 +159,7 @@ If you feel this project helpful/insightful, please cite our paper:
 @article{Yuan_2025_GenPhoto,
   title={Generative Photography: Scene-Consistent Camera Control for Realistic Text-to-Image Synthesis},
   author={Yuan, Yu and Wang, Xijun and Sheng, Yichen and Chennuri, Prateek and Zhang, Xingguang and Chan, Stanley},
-  journal={CVPR},
+  journal={arXiv preprint arXiv:2412.02168},
   year={2025}
 }
 ```
